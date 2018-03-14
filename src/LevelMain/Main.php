@@ -53,7 +53,7 @@ class Main extends PluginBase implements Listener {
            } else {
                $config->set('xp',0);
                $config->set('level',$config->get('level') + 1);
-               Server::GetInstance()->broadcastMessage('§7§l=[ §r§bESPEL §7§l]=§r §bWoow, §e'.$n.'§b Just went to level §e'.$config->get('level'));
+               Server::GetInstance()->broadcastMessage('§7§l=[ §r§bESPEL §7§l]=§r §bWoow, §e'.$n.'§b Est maintenant level §e'.$config->get('level'));
                $event->getPlayer()->setDisplayName('§7[§bl§e'. $config->get('level').'§7][§eP'. $config->get('prestige').'§7] '.$event->getPlayer()->getName());
                $config->save();
            }
@@ -73,7 +73,7 @@ class Main extends PluginBase implements Listener {
            } else {
                $config->set('level',0);
                $config->set('prestige',$config->get('level') + 1);
-               Server::GetInstance()->broadcastMessage('§7§l=[ §r§bESPELeague §7§l]=§r §bWoow, §e'.$n.'§b Just went to §ePrestige §e'.$config->get('prestige'));
+               Server::GetInstance()->broadcastMessage('§7§l=[ §r§bESPELeague §7§l]=§r §bWoow, §e'.$n.'§b Vient de passer un préstige ! Il est maintenant préstige §ePrestige §e'.$config->get('prestige'));
                $event->getPlayer()->setDisplayName('§7[§bl§e'. $config->get('level').'§7][§eP'. $config->get('prestige').'§7] '.$event->getPlayer()->getName());
                $config->save();
            }
