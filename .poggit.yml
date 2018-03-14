@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/ByZikenPE/gthub-espel-level
+branches:
+- master
+projects:
+  gthub-espel-level:
+    path: ""
+...
